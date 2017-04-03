@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Primera Aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app2.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!-- Start WOWSlider.com HEAD section -->
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <!-- End WOWSlider.com HEAD section -->
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+ </head>
+
+<body onLoad="MM_preloadImages('imagenes/sus2.jpg')">
+
+  <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Telefonía Celular</h1>
+    </div>
+    <div>
+     <p align="center">"El verdadero progreso es el que pone la tecnología al alcance de todos"</p>
+     <p align="center">-Henry Ford</p>
+      <div data-role="content" align="center">
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('susti','','imagenes/sus2.jpg',1)"><img src="imagenes/sus1.jpg" width="25%" height="25%" id="susti"> </a>
+      </div>
+    </div>
+    <br>
+    <div>
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-fisrt-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>¿Qué es un Teléfono Celular?</h2>
+         <p>Definición</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Historia de la Telefonía Celular</h2>
+         <p>Antecedentes y curiosidades</p>
+   	   </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Clasificación de la Telefonía Celular</h2>
+         <p>Gamas de celulares</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Compañías encargadas de la Telefonía Celular en México</h2>
+         <p>Compañías celulares en México</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Teléfonos celulares del Futuro</h2>
+         <p>Smartphones inimaginables</p>
+       </a>
+     </li>
+     </ul>
+    </div>
+    <br>
+    <div data-role="content" align="center">
+    <div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images" align="center"><ul>
+		<li><img src="data1/images/definicion1.jpg" alt="definicion1" title="definicion1" id="wows1_0"/></li>
+		<li><img src="data1/images/gamamedia.jpg" alt="gamamedia" title="gamamedia" id="wows1_1"/></li>
+		<li><img src="data1/images/gamaalta.jpg" alt="gamaalta" title="gamaalta" id="wows1_2"/></li>
+		<li><img src="data1/images/historia1.jpg" alt="historia1" title="historia1" id="wows1_3"/></li>
+		<li><img src="data1/images/historia2.jpg" alt="historia2" title="historia2" id="wows1_4"/></li>
+		<li><img src="data1/images/nokiagem.jpg" alt="nokiagem" title="nokiagem" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/sus2.jpg" alt="bootstrap slider" title="sus2" id="wows1_6"/></a></li>
+		<li><img src="data1/images/historia3.jpg" alt="historia3" title="historia3" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="definicion1"><span><img src="data1/tooltips/definicion1.jpg" alt="definicion1"/>1</span></a>
+		<a href="#" title="gamamedia"><span><img src="data1/tooltips/gamamedia.jpg" alt="gamamedia"/>2</span></a>
+		<a href="#" title="gamaalta"><span><img src="data1/tooltips/gamaalta.jpg" alt="gamaalta"/>3</span></a>
+		<a href="#" title="historia1"><span><img src="data1/tooltips/historia1.jpg" alt="historia1"/>4</span></a>
+		<a href="#" title="historia2"><span><img src="data1/tooltips/historia2.jpg" alt="historia2"/>5</span></a>
+		<a href="#" title="nokiagem"><span><img src="data1/tooltips/nokiagem.jpg" alt="nokiagem"/>6</span></a>
+		<a href="#" title="sus2"><span><img src="data1/tooltips/sus2.jpg" alt="sus2"/>7</span></a>
+		<a href="#" title="historia3"><span><img src="data1/tooltips/historia3.jpg" alt="historia3"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+	 </div>
+    </div>
+    <br>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+       <img src="imagenes/logo.png" width="46" height="46">
+     </div>
+     <div>
+       <h4>Aplicacion Dos</h4>
+       <h4>Horacio Ivan Lopez Alonso</h4>
+     </div>
+    </div>
+   </div>
+   
+    
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>¿Qué es un Teléfono Celular?</h1>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+         <h2>Definición</h2>
+         <p align="left">Teléfono portátil que puede hacer y recibir llamadas a través de una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico.</p>
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Smartphone estandar</h1>
+            <div>
+               <img src="imagenes/definicion1.jpg" width="50%" height="50%">
+            </div>
+          </div>
+         </div>
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Conexión a Red Mundial</h1>
+            <div>
+               <img src="imagenes/definicion2.jpg" width="50%" height="50%">
+            </div>
+          </div>
+         </div>
+       </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, HILA</h4>
+      </div>
+    </div>
+
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Historia de la Telefonía Celular</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+      <h2>Antecedentes</h2>
+      <p align="left">La evolución del teléfono móvil ha permitido disminuir su tamaño y peso, desde el Motorola DynaTAC, el primer teléfono móvil en 1983 que pesaba 800 gramos, a los actuales más compactos y con mayores prestaciones de servicio. El desarrollo de baterías más pequeñas y de mayor duración, pantallas más nítidas y de colores, la incorporación de software más amigable, hacen del teléfono móvil un elemento muy apreciado en la vida moderna.</p>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Motorola DynaTAC 8000X. Primer celular comercial</h1>
+         <div>
+            <img src="imagenes/historia1.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+         
+      <p align="left">El avance de la tecnología ha hecho que estos aparatos incorporen funciones que no hace mucho parecían futuristas, como juegos, reproducción de música MP3 y otros formatos, correo electrónico, SMS, agenda electrónica PDA, fotografía digital y video digital, videollamada, navegación por Internet, GPS, y hasta Televisión digital. Las compañías de telefonía móvil ya están pensando nuevas aplicaciones para este pequeño aparato que nos acompaña a todas partes.</p>
+      
+      <p align="left">Para separar una etapa de la otra, la telefonía celular se ha caracterizado por contar con diferentes generaciones. En la actualidad tienen gran importancia los teléfonos móviles táctiles, que para buena o mala fortuna de la sociedad es ahora una necesidad contar con dichos dispositivos.</p>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Evolución del celular</h1>
+         <div>
+            <img src="imagenes/historia2.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+    </div>
+   </div>
+   <br>
+   
+   <div data-role="content" align="center">
+    <div>
+      <h2>Curiosidades</h2>
+      <p align="left">Ayrton dedujo lo que hoy en día puede ya ser una realidad. Puesto que en 1884 dijo:</p>
+      <p align="left">No hay duda de que llegará el día en que probablemente tanto yo como ustedes habremos sido olvidados, en el que los cables de cobre, hierro y la gutapercha que los recubre serán relegados al museo de las antigüedades. Entonces cuando una persona quiera telegrafiar a un amigo, incluso sin saber dónde pueda estar, llamará con una voz electromagnética que será escuchada por aquel que tenga el oído electromagnético, pero que permanecerá silenciosa para todos los demás. Dirá «¿dónde estás?» y la respuesta llegará audible a la persona con el oído electromagnético: «Estoy en el fondo de una mina de carbón, o cruzando los Andes, o en el medio del Pacífico»</p>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Universalización del Celular</h1>
+         <div>
+            <img src="imagenes/historia3.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+    </div>
+   </div>
+   
+    <div data-role="footer" data-theme="a" data-position="fixed">
+      <h4>Aplicacion Dos, HILA</h4>
+    </div>
+   </div>
+   
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>Clasificación de la Telefonía Celular</h1>
+      </div>
+      <div data-role="content" align="center">
+       <div>
+         <h2>Gama Baja</h2>
+         <p align="left">Bajo este nombre se identifican a aquellos teléfonos móviles que cuentan si bien cuentan con una cámara de fotos, esta es de baja calidad. Además de esto, incluyen un reproductor de música aunque de los más básicos, al igual que la memoria que presentan, que es bastante limitada. Los celulares de baja gama tampoco incluyen pantalla táctil y ésta suele ser de tamaño reducido. La conexión a Internet que ofrecen es bastante limitada y no cuentan con 3G.</p>
+         
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Nokia 3310. "El indestructible"</h1>
+         <div>
+            <img src="imagenes/gamabaja.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+       </div>
+      </div>
+      <br>
+      
+      <div data-role="content" align="center">
+       <div>
+         <h2>Gama Media</h2>
+         <p align="left">Estos celulares, en cambio, ofrecen pantallas un poco más grandes que los anteriores, por lo que su calidad es bastante mayor y resultan mucho más prácticas para los usuarios. Además de esto, la cámara de fotos que tienen es de mayor calidad, al igual que los reproductores de MP3. Estos teléfonos móviles también ofrecen juegos, mensaje de texto, calculadora y distintas aplicaciones. Con respecto a la conexión a Internet, permite navegar con HTML y puede ocurrir que algunos modelos cuenten con 3G.</p>
+         
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Celulares que ahora son gama media</h1>
+         <div>
+            <img src="imagenes/gamamedia.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+       </div>
+      </div>
+      <br>
+      
+      <div data-role="content" align="center">
+       <div>
+         <h2>Gama Alta</h2>
+         <p align="left">los teléfonos móviles de alta gama ofrecen varias de las opciones antes mencionadas, pero con mejor calidad, como ocurre con la cámara de fotos o el reproductor de música. Además de esto, la conexión a Internet suele ser de mejor calidad y velocidad y ofrecen 3G. Además, cuentan con Bluetooth y como permiten conexión Wi Fi muchas veces no se venden con planes de Internet.</p>
+         
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Samsung Galaxy s8. Lo mas nuevo</h1>
+         <div>
+            <img src="imagenes/gamaalta.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+       </div>
+      </div>
+      
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, HILA</h4>
+      </div>
+    </div>
+    
+    <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>Compañías Celulares en México</h1>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <p align="left">La disputa por servicio de planes por parte de diversas compañías de telefonía móvil en México en de un listado no muy largo, entre los que destacan sobre todo, telcel y movistar. Posteriormente se podría hablar de Nextel, Unefon, Iusacell y muy recientemente AT&T. </p>
+       </div>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <h2><a href="http://www.telcel.com/" target="_self">Telcel</a></h2>
+         <p align="left">Telcel es una marca propiedad de la empresa mexicana Radiomóvil DIPSA, S.A. de C.V.. Tiene presencia en todo México y se dedica a ofrecer servicios de telefonía móvil, telefonía fija, servicios de banda ancha, entre otros servicios. Es subsidiaria de la empresa mexicana América Móvil, (una filial de Grupo Carso).</p>
+         
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Telcel tiene la mayor infraestructura hoy en día</h1>
+            <div>
+               <img src="imagenes/telcel.jpg" width="50%" height="50%">
+            </div>
+          </div>
+         </div>
+      
+       </div>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <h2><a href="http://www.movistar.com.mx/" target="_self">Movistar</a></h2>
+         <p align="left">Movistar México (legalmente Pegaso PCS, S.A. de C.V.), es una empresa proveedora de servicios de telefonía móvil en México, subsidiaria del Grupo Telefónica y su División Telefónica Móviles.</p>
+         
+         <p align="left">La presencia en México del Grupo Telefónica Móviles, data del año 2000 cuando la compañía adquiere los 4 operadores del Norte del país: Cedetel, BajaCel, Norcel y Movitel, propiedad en ese entonces de Motorola y que operaban principalmente en redes AMPS y CDMA).</p>
+         
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Movistar mantiene planes muy accesibles</h1>
+            <div>
+               <img src="imagenes/movistar.jpg" width="50%" height="50%">
+            </div>
+          </div>
+         </div>
+      
+       </div>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <h2><a href="https://www.att.com.mx/" target="_self">AT&T</a></h2>
+         <p align="left">AT&T México (de razón social: AT&T Comunicaciones Digitales, S. de R.L. de C.V.) es una empresa mexicana de telecomunicaciones, subsidiaria de la empresa estadounidense AT&T, cuya sede se encuentra en la Ciudad de México. Entre sus principales servicios está la telefonía móvil, el internet móvil, servicios de banda ancha móvil, entre otros.</p>
+         
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>AT&T nuevo concursante en México</h1>
+            <div>
+               <img src="imagenes/att.jpg" width="50%" height="50%">
+            </div>
+          </div>
+         </div>
+      
+       </div>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <h2><a href="https://www.unefon.com.mx/" target="_self">Unefon</a></h2>
+         <p align="left">Unefón es una compañía mexicana de telefonía móvil propiedad de AT&T, la cual se dedica a ofrecer únicamente el esquema de cobro de prepago. Fue fundada por Ricardo Salinas Pliego en 1998 y perteneció a Grupo Salinas desde su fundación hasta 2014, cuando la marca fue adquirida por AT&T. </p>
+         
+         <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+           <h1>Unefon se alía con AT&T </h1>
+            <div>
+               <img src="imagenes/unefon.jpg" width="50%" height="50%">
+            </div>
+          </div>
+         </div>
+      
+       </div>
+      </div>
+      
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, HILA</h4>
+      </div>
+    </div>
+    
+    <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>Teléfonos del Futuro</h1>
+      </div>
+      
+      <div data-role="content" align="center">
+       <div>
+         <p align="left">Conforme la tecnología trabaja cada vez más en innovaciones para los celulares, surgen ideas y proyectos que podríamos llegar a tomar como absurdos e imposibles. Pese a ello las grandes compañías siguen en vías de desarrollo para lograr que esos imposibles sean pronto lo más nuevo y avanzado en tecnología celular.</p>
+         <p>A continuación se muestra un pequeño listado con las ideas más innovadoras para la telefonía móvil.</p>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Nokia Gem</h1>
+         <div>
+          <p>Es un proyecto impulsado por la compañía Finlandesa Nokia que pretende la construcción de un dispositivo móvil completamente táctil.</p>
+          <br>
+         </div>
+         <div>
+            <img src="imagenes/nokiagem.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Nokia Forma Humana</h1>
+         <div>
+          <p>De nueva cuenta Nokia pretende lanzar un celular flexible, que a pesar de sufrir cualquier tipo de contorción pueda aún funcionar y realizar las funciones de un telefono inteligente, éste a su vez será compacto y tendra la forma perfecta para la mano humana.</p>
+          <br>
+         </div>
+         <div>
+            <img src="imagenes/nokiafh.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Mozilla Seabird</h1>
+         <div>
+          <p>Contendrá la tecnología más avanzada actual, la innovación que éste contendrá sería la hologramatización de un teclado que pueda ser utilizado inalámbricamente.</p>
+          <br>
+         </div>
+         <div>
+            <img src="imagenes/mozilla.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Samsung Ces</h1>
+         <div>
+          <p>Sería el dispositivo móvil que puede quebrarse por la mitad, utilizando un concepto parecido al de las laptops. Tiene una extensión flexible y táctil, a su vez poseerá tecnología avanzada y una compacta forma.</p>
+          <br>
+         </div>
+         <div>
+            <img src="imagenes/ces.jpg" width="50%" height="50%">
+         </div>
+       </div>
+      </div>
+      
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Dos, HILA</h4>
+      </div>
+    </div>
+    
+    
+</body>
+</html>
